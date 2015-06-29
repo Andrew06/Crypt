@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
-using System.Numerics;
+
 namespace Crypt
+
 {
     public partial class Form1 : Form
     {
@@ -20,6 +20,7 @@ namespace Crypt
         }
         int power(int a, int b, int n) // a^b mod n - возведение a в степень b по модулю n
         {
+            
             int tmp = a;
             int sum = tmp;
             for (int i = 1; i < b; i++)
@@ -109,11 +110,6 @@ namespace Crypt
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
